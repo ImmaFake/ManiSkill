@@ -1,4 +1,4 @@
-#dpg_fyf_3.24_script1
+# dpg_fyf_3.24_script1
 可以把hidden nodes 当成参数
 自训练可用，pretrain不可用，好像确实在learn，还没训完，训完传model
 

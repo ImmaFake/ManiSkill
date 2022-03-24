@@ -1,3 +1,7 @@
+# dpg_3.24
+critic network 进行pretrain
+hidden nodes: 256 512 256
+
 # Copy3_3.24
 critical 学习率 0.001
 

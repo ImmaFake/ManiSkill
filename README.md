@@ -1,3 +1,9 @@
+# 可能是可以调用显卡的方式
+
+        use_cuda = torch.cuda.is_available()
+        device   = torch.device("cuda" if use_cuda else "cpu")
+
+
 # dpg_3.24
 critic network 进行pretrain
 hidden nodes: 256 512 256

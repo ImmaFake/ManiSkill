@@ -1,3 +1,9 @@
+# whp_3.25
+传上去了两个无噪音无learn纯测试的代码，在test文件夹里面
+
+更新了cat的代码，step改成75后结果更好了
+
+新加入了check points， 每50epi存一次，需要在DPG model下新建一个Check_Points的文件夹。 存图太多回报错，不过不影响
 
 
 # whp_3.25

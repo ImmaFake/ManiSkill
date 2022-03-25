@@ -1,3 +1,35 @@
+# whp_3.25
+
+加入OU噪音以替代高斯
+
+reward中加入抽屉开合程度
+        r += info.get('qpos')*5000
+
+尝试过*100，*1000，*5000。仅于*5000时可以自行success
+
+在render时发现完全打开但是不算做success的情况，查看done和success状态均为False
+
+这个打开柜子的方式不是拉把手而是从左侧扒开。大部分时候只能扒开一点，有时会扒开下面的柜门。可能原因为给柜子开合状态的reward高了一点，将机械臂与把手距离的reward盖住了
+
+发现如果部分动作reward设的超级高（如success后reward过高），可能是导致转圈的原因
+
+notebook：cat
+folder：carbinet_OU3
+
+当前参数：        
+        step = 50
+        sigma decay = 1/100000 (per step) #var = 5
+        lra = 0.001
+        lrc = 0.001
+        gamma = 0.9
+        tau = 0.01
+        memory_capacity = 10000
+        num_layer  = 4
+        hiddden_nodes = 256
+        pretrain = False
+        
+        
+
 # fyf_3.25_记录3
 
 reward 421 -> 368

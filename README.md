@@ -1,3 +1,24 @@
+# fyf_3.25_记录3
+
+reward 421 -> 368
+
+失败
+
+当前参数：
+
+        step = 100
+        var = 5
+        lra = 0.001
+        lrc = 0.001
+        gamma = 0.9
+        tau = 0.01
+        memory_capacity = 10000
+        num_layer  = 3
+        hiddden_nodes = 512
+        pretrain = False
+ 
+
+目前最佳 step = 75
 # fyf_3.25_记录2
 
 reward 388 -> 421

@@ -3,6 +3,7 @@
 加入OU噪音以替代高斯
 
 reward中加入抽屉开合程度
+
         r += info.get('qpos')*5000
 
 尝试过*100，*1000，*5000。仅于*5000时可以自行success
@@ -14,9 +15,11 @@ reward中加入抽屉开合程度
 发现如果部分动作reward设的超级高（如success后reward过高），可能是导致转圈的原因
 
 notebook：cat
+
 folder：carbinet_OU3
 
-当前参数：        
+当前参数：   
+
         step = 50
         sigma decay = 1/100000 (per step) #var = 5
         lra = 0.001

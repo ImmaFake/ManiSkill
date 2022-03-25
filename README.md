@@ -1,3 +1,20 @@
+# fyf_3.25_记录1
+
+reward: 380 -> 388
+
+当前参数：
+        step = 40
+        var = 5
+        lra = 0.001
+        lrc = 0.001
+        gamma = 0.9
+        tau = 0.01
+        memory_capacity = 10000
+        num_layer  = 3
+        hiddden_nodes = 512
+        pretrain = False
+
+
 # dpg_fyf_3.24_script2(附结果)
 可以把hidden nodes 当成参数
 
@@ -8,7 +25,8 @@
 已上传30000轮的模型cabinet_selftrain_30000eps,失败了，maximum mean reward = 380
 
 当前参数：
-
+        
+        step = 35
         var = 5
         lra = 0.001
         lrc = 0.001

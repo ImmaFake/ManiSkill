@@ -5,6 +5,20 @@
 
 已上传3000轮的模型cabinet_selftrain_3000eps
 
+已上传30000轮的模型cabinet_selftrain_30000eps,失败了，maximum mean reward = 380
+
+当前参数：
+
+        var = 5
+        lra = 0.001
+        lrc = 0.001
+        gamma = 0.9
+        tau = 0.01
+        memory_capacity = 10000
+        num_layer  = 3
+        hiddden_nodes = 256
+        pretrain = False
+
 # 找到一个csdn
 https://blog.csdn.net/qq_37395293/article/details/114226081?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522164811933916782248523306%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=164811933916782248523306&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_click~default-3-114226081.142^v3^pc_search_result_control_group,143^v4^control&utm_term=ddpg&spm=1018.2226.3001.4187
 

@@ -1,3 +1,57 @@
+#画图
+
+Reward:
+
+data = pd.read_csv('./DPG model/Check_Points/8000epi/Rewards.csv')
+y = np.array(data).squeeze()
+x = range(y.shape[0])
+
+size = 50
+
+z = np.zeros(len(y))
+
+for i in range(len(y)):
+    if y[i] >= 300:
+        y[i] = 0
+    
+for i in range(len(y)):
+
+    if i > (size/2 -1) and i < (len(y) - size/2):  
+        for j in range(size):
+            z[i] += y[i + j - int(size/2)]  #平均reward
+        
+    z[i] = z[i]/size
+
+plt.figure(figsize=(10, 10), dpi=70)
+
+plt.plot(x, y)
+plt.plot(x, z)
+
+plt.legend(['y','z'])
+plt.show()
+
+
+print('maximum mean rewards: ', np.argmax(z))
+
+Success:
+
+data = pd.read_csv('./DPG model/cat_notfix/Success_record.csv')
+y = np.array(data).squeeze()
+x = range(y.shape[0])
+m = np.zeros(y.shape[0])
+
+for i in range(50,7950):
+    for j in range(50):
+        if y[i-50+j] == 1:
+            m[i] += 1
+    m[i] = m[i] / 50   
+        
+plt.figure(figsize=(10, 10), dpi=70)
+plt.plot(x, m)
+plt.show()
+print(max(m))#最大值
+print(np.argmax(m))#最大值所在位置
+
 # whp_3.25
 传上去了两个无噪音无learn纯测试的代码，在test文件夹里面
 

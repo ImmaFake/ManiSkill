@@ -24,22 +24,22 @@ Reward:
 
 Success:
 
-data = pd.read_csv('./DPG model/cat_notfix/Success_record.csv')
-y = np.array(data).squeeze()
-x = range(y.shape[0])
-m = np.zeros(y.shape[0])
+    data = pd.read_csv('./DPG model/cat_notfix/Success_record.csv')
+    y = np.array(data).squeeze()
+    x = range(y.shape[0])
+    m = np.zeros(y.shape[0])
 
-for i in range(50,7950):
-    for j in range(50):
-        if y[i-50+j] == 1:
-            m[i] += 1
-    m[i] = m[i] / 50   
+    for i in range(50,7950):
+        for j in range(50):
+            if y[i-50+j] == 1:
+                m[i] += 1
+        m[i] = m[i] / 50   
         
-plt.figure(figsize=(10, 10), dpi=70)
-plt.plot(x, m)
-plt.show()
-print(max(m))#最大值
-print(np.argmax(m))#最大值所在位置
+    plt.figure(figsize=(10, 10), dpi=70)
+    plt.plot(x, m)
+    plt.show()
+    print(max(m))#最大值
+    print(np.argmax(m))#最大值所在位置
 
 # whp_3.25
 传上去了两个无噪音无learn纯测试的代码，在test文件夹里面

@@ -5,32 +5,21 @@ Reward:
 data = pd.read_csv('./DPG model/Check_Points/8000epi/Rewards.csv')
 y = np.array(data).squeeze()
 x = range(y.shape[0])
-
 size = 50
-
 z = np.zeros(len(y))
-
 for i in range(len(y)):
     if y[i] >= 300:
-        y[i] = 0
-    
+        y[i] = 0  
 for i in range(len(y)):
-
     if i > (size/2 -1) and i < (len(y) - size/2):  
         for j in range(size):
-            z[i] += y[i + j - int(size/2)]  #平均reward
-        
+            z[i] += y[i + j - int(size/2)]  #平均reward        
     z[i] = z[i]/size
-
 plt.figure(figsize=(10, 10), dpi=70)
-
 plt.plot(x, y)
 plt.plot(x, z)
-
 plt.legend(['y','z'])
 plt.show()
-
-
 print('maximum mean rewards: ', np.argmax(z))
 
 Success:

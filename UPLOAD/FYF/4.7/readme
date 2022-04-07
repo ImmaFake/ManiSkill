@@ -1,1 +1,15 @@
-1
+#fyf_4.7
+
+采用了递减learning rate训练level 12789
+
+learning rate: 0.001 -> 0.000001
+
+reward: 1100
+
+success: 2855
+
+total: 5000
+
+效果不好，成功率0.18
+
+Running time:  10970.576286315918

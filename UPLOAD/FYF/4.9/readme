@@ -1,0 +1,9 @@
+total: 6000
+
+reward: 3750
+
+success: 5350
+
+无pretrain, step60, 9 level
+
+success rate: 0.68

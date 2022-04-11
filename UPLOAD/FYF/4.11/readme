@@ -1,0 +1,17 @@
+no pretrain
+
+step60
+
+5list 4000eps + 9list 2000eps
+
+5list 4000eps:
+    
+      total: 4000
+      reward: 500
+      success: 3950
+
+9list 2000eps:
+  
+      total: 2000
+      reward: 1300
+      success: 1850

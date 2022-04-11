@@ -9,9 +9,11 @@ step60
       total: 4000
       reward: 500
       success: 3950
-
+      success rate: 0.46
+      
 9list 2000eps:
   
       total: 2000
       reward: 1300
       success: 1850
+      success rate: 0.34

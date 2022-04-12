@@ -1,0 +1,17 @@
+no pretrain
+
+50step 5list 4000eps + 60step 9list 2000eps
+
+50step 5list:
+
+      total: 4000
+      reward: 750
+      success: 3850
+      success rate: 0.9
+      
+60step 9list:
+
+      total: 2000
+      reward: 150
+      success: 1500
+      success rate: 0.84
